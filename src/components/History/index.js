@@ -15,7 +15,7 @@ class History extends Component {
     console.log(li)
 
     const onGet = event => {
-      const final = onSearch(event)
+      const final = onSearch(event, li)
       return this.setState({li: final, isRender: false})
     }
 

@@ -86,9 +86,9 @@ const App = () => {
     return li
   }
 
-  const onSearch = event => {
+  const onSearch = (event, arr) => {
     const val = event.target.value
-    const searchedData = initialHistoryList.filter(each =>
+    const searchedData = arr.filter(each =>
       each.title.toLowerCase().includes(val),
     )
     li = [...searchedData]
